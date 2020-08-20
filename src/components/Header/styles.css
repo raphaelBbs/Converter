@@ -1,0 +1,18 @@
+.header
+{
+  background-color: #BC5435;
+  padding: 50px;
+  font-size: xx-large;
+  font-family: 'Spartan', sans-serif;
+
+}
+
+.header-h1{
+  font-weight: bold;
+  color: white;
+}
+
+.header-h2{
+  margin-top: 10px;
+  color: white;
+}

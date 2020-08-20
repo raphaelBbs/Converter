@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;900&display=swap');
+
+.app {
+  width: 500px;
+  margin: 1em auto;
+  text-align: center;
+  background-color: #F0C5B6;
+  border: 15px solid #F0C5B6;
+}
+
+.app img {
+  max-width: 150px;
+}
+
+html {
+  
+background-color: black;
+}
