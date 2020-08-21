@@ -20,6 +20,7 @@
   }
 
   &--open {
-    transform: rotate(90deg);
+    transform: rotate(630deg);
+    transition: 0.5s;
   }
 }

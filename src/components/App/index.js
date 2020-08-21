@@ -21,7 +21,7 @@ class App extends React.Component {
 
   state = {
     opened: true,
-    baseAmount: 3.28,
+    baseAmount: 1,
     currency: 'United States Dollar',
   }
 
@@ -33,6 +33,14 @@ class App extends React.Component {
     const { opened } = this.state;
     this.setState({
       opened: !opened,
+    });
+  }
+
+  toggle2 = (name, rate) => {
+    this.setState({
+
+      baseAmount: rate,
+      currency: name,
     });
   }
 
@@ -50,14 +58,14 @@ class App extends React.Component {
   }
 
   render() {
-    const { opened, baseAmount, currency } = this.state;
+    const { opened, currency } = this.state;
     return (
       <div className="app">
         {/* // Je veux donner à header le baseAmount qui vient du state */}
-        <Header baseAmount={baseAmount} />
+        <Header baseAmount={1} />
         <Toggler opened={opened} onButtonClick={this.toggle} />
         {
-          opened && <Currencies currencies={data} />
+          opened && <Currencies currencies={data} onButtonClickAmount={this.toggle2} />
         }
 
         <Amount amount={this.makeRoundedConversion()} currency={currency} />

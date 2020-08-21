@@ -3,7 +3,7 @@ import './style.scss';
 import PropTypes from 'prop-types';
 
 const Currencies = (props) => {
-  const { currencies } = props;
+  const { currencies, onButtonClickAmount } = props;
 
   return (
     <div className="currencies">
@@ -16,7 +16,7 @@ const Currencies = (props) => {
             <li
               key={currencyObject.name}
               onClick={() => {
-                const devise = (currencyObject.rate); console.log('Le taux de change de', currencyObject.name, 'est de', devise);
+                onButtonClickAmount(currencyObject.name, currencyObject.rate);
               }}
               className="currency"
             >{currencyObject.name}
@@ -30,11 +30,13 @@ const Currencies = (props) => {
 };
 
 Currencies.propTypes = {
+  onButtonClickAmount: PropTypes.func.isRequired,
   currencies: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
     }),
   ).isRequired,
+
 };
 
 export default Currencies;

@@ -4,6 +4,7 @@
 .currencies {
   height: 250px;
   overflow: auto;
+  transition: 5s;
 
   &-title {
     padding: vars.$gutter;
