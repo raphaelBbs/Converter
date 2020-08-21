@@ -18,6 +18,7 @@ const Currencies = (props) => {
               onClick={() => {
                 onButtonClickAmount(currencyObject.name, currencyObject.rate);
               }}
+
               className="currency"
             >{currencyObject.name}
             </li>
