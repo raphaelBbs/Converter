@@ -7,9 +7,9 @@ const Header = (props) => {
   return (
     <header className="header">
       <h1 className="header-title">Converter</h1>
-      {/* <label htmlFor="nom">Valeur :</label> */}
+      <label htmlFor="nom"> </label>
       <input type="number" onChange={baseAmount} />
-      <p className="header-amount">{baseAmount.target} euro</p>
+      <p className="header-amount">{baseAmount.target} euro(s)</p>
     </header>
   );
 };
