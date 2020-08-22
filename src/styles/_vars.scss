@@ -1,6 +1,18 @@
-$color: #3102db;
-$color-alt: #05b2ddec;
-$color-light: rgb(18, 188, 240);
+$color: #4A1E4A;
+$color-alt: #05102E;
+$color-light: rgb(155, 192, 236);
 $gutter: 0.8rem;
 $font: 'Spartan', sans-serif;
 $transition-fast: 0.2s;
+
+input{
+  width: 60px;
+  border-radius: 10px;
+  height: 30px;
+  margin-top: 10px;
+  text-align: center;
+  $font: 'Spartan', sans-serif;
+  font-weight: 600;
+  
+ 
+}

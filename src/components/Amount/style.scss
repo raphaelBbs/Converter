@@ -3,6 +3,8 @@
 .amount {
   padding: vars.$gutter * 3 0;
   text-align: center;
+  border-radius: 20px;
+  margin-top: 15px;
 
   &-value {
     font-weight: bold;
@@ -12,5 +14,11 @@
   &-currency {
     font-size: 1.3em;
     margin-top: vars.$gutter;
+  }
+
+  &:hover {
+    background-color:  #4A1E4A;
+    color: white;
+    transition: 0.2s;
   }
 }

@@ -44,6 +44,15 @@ class App extends React.Component {
     });
   }
 
+  handleChange =(rate) => {
+    console.log('Jc le gros PD qui me plante un couteau dans le dos en me mettant dans le meme sac que Selim');
+    this.setState({
+
+      // eslint-disable-next-line no-undef
+      baseAmount: rate.target.value,
+    });
+  }
+
   makeRoundedConversion = () => {
     const { baseAmount, currency } = this.state;
     // Retrouver dans la liste de mes currencies
@@ -62,7 +71,7 @@ class App extends React.Component {
     return (
       <div className="app">
         {/* // Je veux donner à header le baseAmount qui vient du state */}
-        <Header baseAmount={1} />
+        <Header baseAmount={this.handleChange} />
         <Toggler opened={opened} onButtonClick={this.toggle} />
         {
           opened && <Currencies currencies={data} onButtonClickAmount={this.toggle2} />

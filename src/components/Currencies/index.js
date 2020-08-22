@@ -20,7 +20,7 @@ const Currencies = (props) => {
               }}
 
               className="currency"
-            >{currencyObject.name}
+            >--=| {currencyObject.name} |=--
             </li>
           ))
         }

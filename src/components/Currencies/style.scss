@@ -5,6 +5,7 @@
   height: 250px;
   overflow: auto;
   transition: 5s;
+  margin-top: 20px;
 
   &-title {
     padding: vars.$gutter;
@@ -23,5 +24,6 @@
   &:hover {
     background-color: vars.$color-alt;
     transition: vars.$transition-fast;
+    color: vars.$color-light;
   }
 }
